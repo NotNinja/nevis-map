@@ -68,4 +68,4 @@ A list of NevisMap contributors can be found in [AUTHORS.md](https://github.com/
 
 See [LICENSE.md](https://github.com/Skelp/nevis-map/raw/master/LICENSE.md) for more information on our MIT license.
 
-[![Copyright Skelp](https://rawgit.com/Skelp/skelp-branding/master/assets/footer/invert-filled/skelp-footer-invert-filled.svg)](https://skelp.io)
+[![Copyright Skelp](https://cdn.rawgit.com/Skelp/skelp-branding/master/assets/footer/invert-filled/skelp-footer-invert-filled.svg)](https://skelp.io)
