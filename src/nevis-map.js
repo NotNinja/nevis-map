@@ -216,12 +216,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
   /**
    * Associates the specified <code>value</code> with the <code>key</code> provided in this {@link NevisMap}.
    *
-   * If <code>key</code> was previously associated with a value, the old value is replaced with <code>value</code> and
-   * is returned by this method.
-   *
-   * A return value of <code>undefined</code> does not necessarily indicate that no mapping existed for
-   * <code>key</code> as it's also possible that key was explicitly mapped to <code>undefined</code>. If this certainty
-   * is needed, use in conjunction with {@link NevisMap#hasKey}.
+   * If <code>key</code> was previously associated with a value, the old value is replaced with <code>value</code>.
    *
    * @param {*} key - the key with which <code>value</code> is to be associated
    * @param {*} value - the value to be associated with <code>key</code>
@@ -230,6 +225,25 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    * @memberof NevisMap#
    */
   set: function(key, value) {
+    // TODO: Complete
+    return this
+  },
+
+  /**
+   * Associates all of the key/value pairs within the specified <code>entries</code> in this {@link NevisMap}.
+   *
+   * If any key was previously associated with a value, the old value is replaced with the new value.
+   *
+   * <code>entries</code> can either be a multi-dimensional array where the array contains the <code>[key, value]</code>
+   * pairs for each mapping or an instance of {@link NevisMap}.
+   *
+   * @param {Array.<Array>|NevisMap} [entries] - the key/value pairs (or {@link NevisMap} containing them) to be
+   * associated
+   * @return {NevisMap} A reference to this {@link NevisMap} for chaining purposes.
+   * @public
+   * @memberof NevisMap#
+   */
+  setAll: function(entries) {
     // TODO: Complete
     return this
   },

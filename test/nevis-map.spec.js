@@ -147,10 +147,36 @@ describe('nevis-map:NevisMap', function() {
   })
 
   describe('#set', function() {
-    it('should associated value with specified key and return previously associated value')
+    it('should associate value with specified key')
 
     context('when no mapping for specified key exists', function() {
-      it('should associated value with specified key and return undefined')
+      it('should associate value with specified key')
+    })
+  })
+
+  describe('#setAll', function() {
+    context('when multi-dimensional array is specified', function() {
+      it('should associate all key/value pairs')
+
+      context('and no mapping for a key exists', function() {
+        it('should associate value with key')
+      })
+
+      context('and array is empty', function() {
+        it('should not modify map')
+      })
+    })
+
+    context('when NevisMap instance is specified', function() {
+      it('should associate all mappings')
+
+      context('and no mapping for a key exists', function() {
+        it('should associate value with key')
+      })
+
+      context('and map is empty', function() {
+        it('should not modify map')
+      })
     })
   })
 
