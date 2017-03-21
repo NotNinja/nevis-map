@@ -39,7 +39,8 @@ $ bower install --save nevis nevis-map
 As you can see above, NevisMap does have a peer dependency on [Nevis](https://github.com/Skelp/nevis) so you need to
 make sure that you install `nevis` as well.
 
-You'll need to have at least [Node.js](https://nodejs.org). While equals should be compatible with all versions of
+You'll need to have at least [Node.js](https://nodejs.org) and you'll only need [Bower](https://bower.io) if you want to
+install that way instead of using `npm`. While equals should be compatible with all versions of
 [Node.js](https://nodejs.org), it is only tested against version 4 and above.
 
 If you want to simply download the file to be used in the browser you can find them below:
