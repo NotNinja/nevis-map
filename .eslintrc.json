@@ -1,0 +1,31 @@
+{
+  "extends": "skelp/v3/es5",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "func-names": "off",
+    "max-params": [
+      "error",
+      5
+    ],
+    "no-bitwise": "off",
+    "no-empty-function": "off",
+    "no-inline-comments": "off",
+    "no-invalid-this": "off",
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "none"
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "sort-keys": "off"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "nevis-map",
+  "version": "0.1.0alpha",
+  "description": "Brings a true hash map to JavaScript",
+  "homepage": "https://github.com/Skelp/nevis-map",
+  "bugs": {
+    "url": "https://github.com/Skelp/nevis-map/issues"
+  },
+  "author": {
+    "name": "Alasdair Mercer",
+    "email": "alasdair@skelp.io",
+    "url": "https://skelp.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "nevis",
+    "hash",
+    "map",
+    "hashcode",
+    "equals"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skelp/nevis-map.git"
+  },
+  "peerDependencies": {
+    "nevis": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint-config-skelp": "^0.1.5",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-coveralls": "^1.0.1",
+    "grunt-eslint": "^19.0.0",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "grunt-mocha-test": "^0.13.2",
+    "grunt-rollup": "^1.0.1",
+    "istanbul": "^0.4.5",
+    "load-grunt-tasks": "^3.5.2",
+    "mocha": "^3.2.0",
+    "nevis": "*",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "sinon": "^2.0.0"
+  },
+  "main": "index.js",
+  "browser": "dist/nevis-map.js",
+  "scripts": {
+    "build": "grunt build",
+    "ci": "grunt ci",
+    "report-coverage": "grunt coveralls",
+    "test": "grunt test"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "nevis-map",
+  "version": "0.1.0alpha",
+  "description": "Brings a true hash map to JavaScript",
+  "homepage": "https://github.com/Skelp/nevis-map",
+  "authors": [
+    {
+      "name": "Alasdair Mercer",
+      "email": "alasdair@skelp.io",
+      "homepage": "https://skelp.io"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nevis",
+    "hash",
+    "map",
+    "hashcode",
+    "equals"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skelp/nevis-map.git"
+  },
+  "main": "dist/nevis-map.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "coverage/",
+    "src/",
+    "test/",
+    ".*",
+    "AUTHORS.md",
+    "CHANGES.md",
+    "CONTRIBUTING.md",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ]
+}
