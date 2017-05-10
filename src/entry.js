@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Alasdair Mercer, Skelp
+ * Copyright (C) 2017 Alasdair Mercer, !ninja
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,9 +20,9 @@
  * SOFTWARE.
  */
 
-'use strict'
+'use strict';
 
-var Nevis = require('nevis')
+var Nevis = require('nevis');
 
 // TODO: Complete
 
@@ -46,7 +46,7 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @type {number}
    * @memberof Entry#
    */
-  this.hash = hash
+  this.hash = hash;
 
   /**
    * TODO: Document
@@ -55,7 +55,7 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @type {*}
    * @memberof Entry#
    */
-  this.key = key
+  this.key = key;
 
   /**
    * TODO: Document
@@ -64,7 +64,7 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @type {*}
    * @memberof Entry#
    */
-  this.value = value
+  this.value = value;
 
   /**
    * TODO: Document
@@ -73,7 +73,7 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @type {?Entry}
    * @memberof Entry#
    */
-  this.next = next
+  this.next = next;
 
   /**
    * TODO: Document
@@ -82,7 +82,7 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @type {NevisMap~Options}
    * @memberof Entry#
    */
-  this._options = options
+  this._options = options;
 }, {
 
   /**
@@ -92,15 +92,15 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    */
   equals: function(obj) {
     if (obj == null || !(obj instanceof Entry)) {
-      return false
+      return false;
     }
 
-    var options = this._options.equals
+    var options = this._options.equals;
 
     return new Nevis.EqualsBuilder()
       .append(this.key, obj.key, options)
       .append(this.value, obj.value, options)
-      .build()
+      .build();
   },
 
   /**
@@ -109,9 +109,9 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @memberof Entry#
    */
   hashCode: function() {
-    var options = this._options.hashCode
+    var options = this._options.hashCode;
 
-    return Nevis.hashCode(this.key, options) ^ Nevis.hashCode(this.value, options)
+    return Nevis.hashCode(this.key, options) ^ Nevis.hashCode(this.value, options);
   },
 
   /**
@@ -120,9 +120,9 @@ var Entry = Nevis.extend('Entry', function(hash, key, value, next, options) {
    * @memberof Entry#
    */
   toString: function() {
-    return this.key + '=' + this.value
+    return this.key + '=' + this.value;
   }
 
-})
+});
 
-module.exports = Entry
+module.exports = Entry;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Alasdair Mercer, Skelp
+ * Copyright (C) 2017 Alasdair Mercer, !ninja
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,58 +20,58 @@
  * SOFTWARE.
  */
 
-'use strict'
+'use strict';
 
-var expect = require('chai').expect
+var expect = require('chai').expect;
 
-var Entry = require('../src/entry')
+var Entry = require('../src/entry');
 
 describe('entry:Entry', function() {
   // TODO: Complete
 
   describe('#hash', function() {
-    it('should be hash passed to constructor')
-  })
+    it('should be hash passed to constructor');
+  });
 
   describe('#key', function() {
-    it('should be key passed to constructor')
-  })
+    it('should be key passed to constructor');
+  });
 
   describe('#next', function() {
-    it('should be value passed to constructor')
-  })
+    it('should be value passed to constructor');
+  });
 
   describe('#value', function() {
-    it('should be value passed to constructor')
-  })
+    it('should be value passed to constructor');
+  });
 
   describe('#equals', function() {
-    it('should use options passed to constructor')
+    it('should use options passed to constructor');
 
     context('when specified object is equal to entry', function() {
-      it('should return true')
-    })
+      it('should return true');
+    });
 
     context('when specified object is not equal to entry', function() {
-      it('should return false')
-    })
+      it('should return false');
+    });
 
     context('when specified object is null', function() {
-      it('should return false')
-    })
+      it('should return false');
+    });
 
     context('when specified object is not an Entry', function() {
-      it('should return false')
-    })
-  })
+      it('should return false');
+    });
+  });
 
   describe('#hashCode', function() {
-    it('should return hash code generated for entry')
+    it('should return hash code generated for entry');
 
-    it('should use options passed to constructor')
-  })
+    it('should use options passed to constructor');
+  });
 
   describe('#toString', function() {
-    it('should return simple string representation of entry')
-  })
-})
+    it('should return simple string representation of entry');
+  });
+});

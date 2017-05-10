@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Alasdair Mercer, Skelp
+ * Copyright (C) 2017 Alasdair Mercer, !ninja
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,15 @@
  * SOFTWARE.
  */
 
-'use strict'
+'use strict';
 
-var expect = require('chai').expect
+var expect = require('chai').expect;
 
-var index = require('../src/index')
-var NevisMap = require('../src/nevis-map')
+var index = require('../src/index');
+var NevisMap = require('../src/nevis-map');
 
 describe('index:NevisMap', function() {
   it('should export NevisMap', function() {
-    expect(index).to.equal(NevisMap)
-  })
-})
+    expect(index).to.equal(NevisMap);
+  });
+});

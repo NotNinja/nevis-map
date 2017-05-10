@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Alasdair Mercer, Skelp
+ * Copyright (C) 2017 Alasdair Mercer, !ninja
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,11 +20,11 @@
  * SOFTWARE.
  */
 
-'use strict'
+'use strict';
 
-var Nevis = require('nevis')
+var Nevis = require('nevis');
 
-var Entry = require('./entry')
+var Entry = require('./entry');
 
 /**
  * TODO: Document
@@ -45,7 +45,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    * @type {NevisMap~Options}
    * @memberof NevisMap#
    */
-  this._options = options || {}
+  this._options = options || {};
 }, {
 
   /**
@@ -73,7 +73,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   delete: function(key) {
     // TODO: Complete
-    return false
+    return false;
   },
 
   /**
@@ -88,7 +88,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   entries: function() {
     // TODO: Complete
-    return []
+    return [];
   },
 
   /**
@@ -100,7 +100,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   entrySet: function() {
     // TODO: Complete
-    return []
+    return [];
   },
 
   /**
@@ -117,8 +117,8 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
   forEach: function(callback, context) {
     // TODO: Optimize, if needed
     this.entries().forEach(function(entry) {
-      callback.call(context, entry[1], entry[0], this)
-    }, this)
+      callback.call(context, entry[1], entry[0], this);
+    }, this);
   },
 
   /**
@@ -136,7 +136,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   get: function(key) {
     // TODO: Complete
-    return null
+    return null;
   },
 
   /**
@@ -150,7 +150,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    * @memberof NevisMap#
    */
   has: function(key) {
-    return this.hasKey(key)
+    return this.hasKey(key);
   },
 
   /**
@@ -164,7 +164,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   hasKey: function(key) {
     // TODO: Complete
-    return false
+    return false;
   },
 
   /**
@@ -178,7 +178,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   hasValue: function(value) {
     // TODO: Complete
-    return false
+    return false;
   },
 
   /**
@@ -190,7 +190,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   keys: function() {
     // TODO: Complete
-    return []
+    return [];
   },
 
   /**
@@ -210,7 +210,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   remove: function(key) {
     // TODO: Complete
-    return null
+    return null;
   },
 
   /**
@@ -226,7 +226,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   set: function(key, value) {
     // TODO: Complete
-    return this
+    return this;
   },
 
   /**
@@ -245,7 +245,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   setAll: function(entries) {
     // TODO: Complete
-    return this
+    return this;
   },
 
   /**
@@ -257,7 +257,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   size: function() {
     // TODO: Complete
-    return 0
+    return 0;
   },
 
   /**
@@ -269,7 +269,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   toMap: function() {
     // TODO: Optimize, if needed (would passing this work? if so, is that any better?)
-    return new Map(this.entries())
+    return new Map(this.entries());
   },
 
   /**
@@ -281,7 +281,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   values: function() {
     // TODO: Complete
-    return []
+    return [];
   },
 
   /**
@@ -291,7 +291,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   equals: function(obj) {
     // TODO: Complete
-    return false
+    return false;
   },
 
   /**
@@ -301,7 +301,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   hashCode: function() {
     // TODO: Complete
-    return 0
+    return 0;
   },
 
   /**
@@ -311,7 +311,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   toString: function() {
     // TODO: Complete
-    return ''
+    return '';
   },
 
   /**
@@ -326,7 +326,7 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    * @memberof NevisMap#
    */
   _createEntry: function(hash, key, value, next) {
-    return new Entry(hash, key, value, next, this._options)
+    return new Entry(hash, key, value, next, this._options);
   }
 
 }, {
@@ -347,24 +347,24 @@ var NevisMap = Nevis.extend('NevisMap', function(entries, options) {
    */
   Entry: Entry
 
-})
+});
 
 /* istanbul ignore else */
 if (typeof Symbol === 'function') {
   NevisMap.prototype[Symbol.iterator] = function() {
     // TODO: Optimize, if needed
-    var entries = this.entries()
-    var iterator = entries[Symbol.iterator]
+    var entries = this.entries();
+    var iterator = entries[Symbol.iterator];
 
     return {
       next: function() {
-        return iterator.next()
+        return iterator.next();
       }
-    }
-  }
+    };
+  };
 }
 
-module.exports = NevisMap
+module.exports = NevisMap;
 
 /**
  * TODO: Document
